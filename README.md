@@ -19,20 +19,40 @@ Se ejecuta desde consola y permite interactuar con los registros de estudiantes 
 
 ## Funcionalidades
 
-### 1. Listar todos los estudiantes
+### 1. [Listar todos los estudiantes](https://github.com/churi-dev/java-maven-app-control-estudiante/blob/64e5402dc3ecedd9c2eed1785e09373ae291857c/src/main/java/com/estudiante/datos/EstudianteDAO.java#L15)
 Obtiene y muestra todos los registros existentes en la base de datos ordenados por su ID.
 
-### 2. Buscar estudiante por su ID
+```java
+public List<Estudiante> ListarEstudiante() {}
+```
+
+### 2. [Buscar estudiante por su ID](https://github.com/churi-dev/java-maven-app-control-estudiante/blob/64e5402dc3ecedd9c2eed1785e09373ae291857c/src/main/java/com/estudiante/datos/EstudianteDAO.java#L58)
 Permite consultar un estudiante por su ID
 
-### 3. Insertar un nuevo estudiante
+```java
+public Estudiante BuscarEstudianteById(int id) {}
+```
+
+### 3. [Insertar un nuevo estudiante](https://github.com/churi-dev/java-maven-app-control-estudiante/blob/64e5402dc3ecedd9c2eed1785e09373ae291857c/src/main/java/com/estudiante/datos/EstudianteDAO.java#L96)
 Insertar un nuevo registro en la base de datos
 
-### 4. Actualizar un estudiante
+```java
+public boolean InsertarEstudiante(Estudiante estudiante) {}
+```
+
+### 4. [Actualizar un estudiante](https://github.com/churi-dev/java-maven-app-control-estudiante/blob/64e5402dc3ecedd9c2eed1785e09373ae291857c/src/main/java/com/estudiante/datos/EstudianteDAO.java#L126)
 Actualizar los valores de un estudiante ya existente en la base de datos
 
-### 5. Eliminar un estudiante
+```java
+public boolean ActualizarEstudiante(Estudiante estudiante) {}
+```
+
+### 5. [Eliminar un estudiante](https://github.com/churi-dev/java-maven-app-control-estudiante/blob/64e5402dc3ecedd9c2eed1785e09373ae291857c/src/main/java/com/estudiante/datos/EstudianteDAO.java#L155)
 Eliminar un registro de estudiante por su ID ya existente en la base de datos
+
+```java
+public boolean ELiminarEstudiante(Estudiante estudiante) {}
+```
 
 ## Modelo de datos
 
@@ -72,5 +92,6 @@ private static final String constrasenia = "constrasenia_aqui";
 Desarrollado por: churi-dev
 
 ---
+
 
 
